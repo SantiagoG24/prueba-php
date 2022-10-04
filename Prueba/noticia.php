@@ -4,7 +4,7 @@ function getNoticias(){
         $query=$db->prepare('SELECT * FROM news');
         $query->execute();
         $noticias=$query->fetchAll(PDO::FETCH_OBJ);
-        return $noticias
+        return $noticias;
 //     $n0 =new stdClass();
 //     $n0 ->title='¿Por qué Leclerc y Verstappen partirán desde el fondo en Bélgica?';
 //     $n0 ->text='Las vacaciones de la Fórmula 1 llegaron a su fin. Ya pasó el descanso de cada verano y, en consecuencia, los pilotos se encuentran listos para encarar el tramo final de la temporada. Y el regreso a la actividad se está dando en el Gran Premio de Bélgica, que comenzó con dos prácticas libres bajo la lluvia en las que el dominio de las tandas se dividió entre Max Verstappen, el más rápido en la segunda sesión (le sacó casi un segundo al resto), y los dos hombres de Ferrari, Charles Leclerc y Carlos Sainz.';
@@ -29,5 +29,4 @@ function getNoticias(){
 //         "noticia2"=>$n2
 //     );
 //     return $noticias;
-// }
-
+}
